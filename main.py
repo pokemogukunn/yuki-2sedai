@@ -176,6 +176,7 @@ app.mount("/css", StaticFiles(directory="./css"), name="static")
 app.mount("/blogs", StaticFiles(directory="./blog", html=True), name="static")
 app.mount("/pass", StaticFiles(directory="./pass", html=True), name="static")
 app.mount("/blog", StaticFiles(directory="./blog/kakaomame", html=True), name="static")
+app.mount("/info1", StaticFiles(directory="./info", html=True), name="static")
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 from fastapi.templating import Jinja2Templates
